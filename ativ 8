@@ -1,0 +1,42 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro i, n, numero
+        inteiro menorValor, maiorValor, soma
+
+        
+        escreva("Informe a quantidade de números: ")
+        leia(n)
+
+     
+        menorValor = 999999 
+        maiorValor = -999999 
+        soma = 0
+
+       
+        para (i = 1; i <= n; i++)
+        {
+            escreva("Digite o ", i, "º número: ")
+            leia(numero)
+
+            soma = soma + numero
+
+         
+            se (numero < menorValor)
+            {
+                menorValor = numero
+            }
+
+           
+            se (numero > maiorValor)
+            {
+                maiorValor = numero
+            }
+        }
+
+        escreva("Menor valor: ", menorValor, "\n")
+        escreva("Maior valor: ", maiorValor, "\n")
+        escreva("Soma dos valores: ", soma)
+    }
+}
