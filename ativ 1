@@ -1,0 +1,25 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro populacaoA, populacaoB, anos
+        real taxaCrescimentoA, taxaCrescimentoB
+
+        // Inicializando as variáveis
+        populacaoA = 80000
+        populacaoB = 200000
+        taxaCrescimentoA = 0.03 // 3%
+        taxaCrescimentoB = 0.015 // 1.5%
+        anos = 0
+
+        // Calculando o número de anos
+        enquanto (populacaoA < populacaoB)
+        {
+            populacaoA = populacaoA + (populacaoA * taxaCrescimentoA)
+            populacaoB = populacaoB + (populacaoB * taxaCrescimentoB)
+            anos = anos + 1
+        }
+
+        escreva("Anos necessários para a população do país A ultrapassar ou igualar a do país B: ", anos)
+    }
+}
